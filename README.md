@@ -1,10 +1,8 @@
-# Documentación de Carrusel Slider Interactivo 
+# Desarrollo de una landig page 
 
 ![Muestra de slider](./assets/image/template.jpg)
 
-Proyecto desarrollado por [Verónica Del Valle](https://www.linkedin.com/in/vernica-valle/) como parte del proyecto Carrusel Slider Interactivo.
-
-## Instrucciones de Uso
+## El diseño solo es usado con fines de aprendizaje. Foto tomada de - [Ver imagen en Pinterest](https://ar.pinterest.com/pin/24136547995514571/)
 
 Este Carrusel Slider es fácil de implementar en tu sitio web. Puedes elegir entre usar la navegación, la paginación o ambas, según tus necesidades.
 
