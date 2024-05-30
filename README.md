@@ -1,6 +1,6 @@
 # Documentación de Carrusel Slider Interactivo 
 
-![Muestra de slider](./public/tommy!.png)
+![Muestra de slider](./assets/image/template.jpg)
 
 Proyecto desarrollado por [Verónica Del Valle](https://www.linkedin.com/in/vernica-valle/) como parte del proyecto Carrusel Slider Interactivo.
 
