@@ -6,10 +6,7 @@ El diseño solo es usado con fines de aprendizaje. Imagen tomada de - [Pinterest
 
 Este Carrusel Slider es fácil de implementar en tu sitio web. Puedes elegir entre usar la navegación, la paginación o ambas, según tus necesidades.
 
-### Uso Básico
+- HTML
+- CSS
 
-1. Clona este repositorio en tu máquina local o descarga el ZIP.
-
-2. Abre tu archivo HTML donde deseas incorporar el carrusel.
-
-3. Agrega la siguiente estructura HTML para el carrusel:
+![html-5--v1](https://github.com/veronicadelvalle/carrusel-slider/assets/139937653/4d1c653a-1d4b-4f07-9479-d4e03fbffd86) ![css3](https://github.com/veronicadelvalle/carrusel-slider/assets/139937653/687eab3e-adf9-4916-a6e3-916a73059d9b)
