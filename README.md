@@ -1,10 +1,10 @@
 # LANDING PAGE 
 
-Mira los avnces del grupo [aquí: ](https://spacex-web.000webhostapp.com/)
-
 ![Muestra de slider](./assets/image/template.jpg)
 
 El diseño solo es usado con fines de aprendizaje. La imagen fue tomada de [Pinterest](https://ar.pinterest.com/pin/24136547995514571/).
+
+Mira los avances del grupo [aquí: ](https://spacex-web.000webhostapp.com/)
 
 ## Tecnologías utilizadas para esta maquetación
 
