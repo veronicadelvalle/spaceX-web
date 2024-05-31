@@ -1,6 +1,6 @@
 # LANDING PAGE 
 
-## Mira los avnces del grupo [aquí:]([https://ar.pinterest.com/pin/24136547995514571/](https://spacex-web.000webhostapp.com/))
+Mira los avnces del grupo [aquí: ](https://spacex-web.000webhostapp.com/)
 
 ![Muestra de slider](./assets/image/template.jpg)
 
