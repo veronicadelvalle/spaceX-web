@@ -6,7 +6,7 @@ El diseño solo es usado con fines de aprendizaje. La imagen fue tomada de [Pint
 
 Mira los avances del grupo [aquí: ](https://spacex-web.000webhostapp.com/)
 
-Grupo de [FACEBOOK](https://www.facebook.com/share/XrEBA3SZBWuY1Yvg/){:target="_blank"}
+Grupo de [FACEBOOK](https://www.facebook.com/share/XrEBA3SZBWuY1Yvg/)
 
 ## Tecnologías utilizadas para esta maquetación
 
