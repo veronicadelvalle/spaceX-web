@@ -1,10 +1,8 @@
-/* Aquí comienzas los estilos globales que podrían ir en otro archivo */
-
 /* FUENTES */
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-
+/*Estilos globales*/
 *,
 ::after,
 ::before {
@@ -13,10 +11,9 @@
   box-sizing: border-box;
 }
 
-/* raíz */
+/* selector raíz */
 :root {
   /*colores*/
-
   --color-white: #fff;
   --color-grey-light: #f5f5f5;
   --color-black: #000;
@@ -37,7 +34,7 @@
   --note-font-size: 1.1rem;
 
   /*tamaños*/
-  --margin-b:20px;
+  --margin-b: 20px;
 }
 
 body {
@@ -57,16 +54,20 @@ h3 {
   letter-spacing: 2px;
 }
 
+section {
+  margin-bottom: calc(var(--margin-b) * 4);
+}
+
 /*===================================================================*/
 
-/*--Header--*/
+/*----------Header----------------*/
 
 header {
   width: 100%;
   margin-bottom: var(--margin-b);
 }
 
-.banner{
+.banner {
   margin: 60px 0;
 }
 
@@ -79,34 +80,174 @@ header {
 .menu {
   width: 45%;
   margin-inline: auto;
-  border: 1px solid red;
 }
 
-.menu__list{
+.menu__list {
   list-style: none;
   display: flex;
   position: relative;
 }
 
-.menu__item{
+.menu__item {
   width: 100%;
   text-align: center;
-  border: 1px solid red;
 }
 
-.menu__item--link{
+.menu__item--link {
   text-decoration: none;
-  font-family:"Open Sans";
+  font-family: "Open Sans";
   font-weight: bold;
   font-size: var(--small-font-size);
-  color:inherit;
+  color: inherit;
 }
 
 .icon--menu {
-  border: 1px solid blue;
-  height: 100px;
-  width: 100px;
-  /* position: absolute;
-  left: 0;
-  top: 0; */
+  position: absolute;
+  right: -15%;
 }
+
+/*--------------banner-----------------*/
+.container {
+  position: relative;
+}
+
+.container__side {
+  display: block;
+  width: 750px;
+  margin-inline: auto;
+}
+
+.container__content {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.container__title,
+.container__text,
+.container__button {
+  /* border: 1px solid red; */
+  display: block;
+  width: 100%;
+  color: #fff;
+}
+
+.container__title {
+  font-family: "M PLUS Rounded 1c";
+  font-weight: bold;
+  font-size: var(--big-font-size);
+  line-height: var(--big-font-size);
+  padding-bottom: 10px;
+}
+
+.container__text {
+  font-size: var(--note-font-size);
+  font-weight: 600;
+  padding-bottom: 40px;
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: var(--normal-font-size);
+  background-color: #c7b294;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+/*---------------card--------------*/
+
+.container--col {
+  width: 65%;
+  height: 720px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-md {
+  width: 48.5%;
+}
+
+.card {
+  position: relative;
+
+  .card__article{
+    position:absolute;
+    top: 0;
+    padding: 30px;
+  }
+
+  .card__img {
+    display: block;
+    width: 100%;
+  }
+
+  .card__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .card__text {
+    margin-bottom: var(--margin-b);
+    text-align: justify;
+  }
+
+}
+
+.col-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.card--solo {
+  width: 46.5%;
+}
+
+.card--solo__img {
+  display: block;
+  width: 100%;
+}
+ 
+.card--solo:last-child{
+  width: 100%;
+  height: 43%;
+  position: relative;
+
+  img {
+    height: 100%;
+    
+  }
+
+  &:after{
+    content: 'bomsai box';
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: calc(720px * .43); /*Calculo el alto actual de container--col y le saco el porcentaje de 43%, equivalente a el tamaño del card--solo*/
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+  }
+
+}
+
+
+
+
+
