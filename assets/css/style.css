@@ -1,5 +1,5 @@
 /* FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('httñps://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /*Estilos globales*/
@@ -31,14 +31,18 @@
   --big-font-size: 3.5rem;
   --normal-font-size: 1.05rem;
   --small-font-size: 0.92rem;
-  --note-font-size: 1.1rem;
+  --title-font-size: 2.2rem;
 
   /*tamaños*/
   --margin-b: 20px;
+
+  /*Font-family*/
+  /* --font-family-title:"M PLUS Rounded 1c"; */
+  --font-family-normal:"Open Sans", sans-serif;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-family-normal);
   color: var(--color-black-light);
   font-size: 16px;
   line-height: 1.6;
@@ -49,9 +53,13 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "M PLUS Rounded 1c", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+h3 {
+  font-size: var(--title-font-size);
+
 }
 
 section {
@@ -140,7 +148,7 @@ header {
 }
 
 .container__title {
-  font-family: "M PLUS Rounded 1c";
+  font-family: var(--font-title);
   font-weight: bold;
   font-size: var(--big-font-size);
   line-height: var(--big-font-size);
@@ -179,29 +187,29 @@ header {
 
 .card {
   position: relative;
-
-  .card__article{
-    position:absolute;
-    top: 0;
-    padding: 30px;
-  }
-
-  .card__img {
-    display: block;
-    width: 100%;
-  }
-
-  .card__title {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-
-  .card__text {
-    margin-bottom: var(--margin-b);
-    text-align: justify;
-  }
-
 }
+
+.card__article {
+  position: absolute;
+  top: 0;
+  padding: 30px;
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card__text {
+  margin-bottom: var(--margin-b);
+  text-align: justify;
+}
+
 
 .col-flex {
   display: flex;
@@ -218,25 +226,27 @@ header {
   display: block;
   width: 100%;
 }
- 
-.card--solo:last-child{
+
+.card--solo:last-child {
   width: 100%;
   height: 43%;
   position: relative;
 
   img {
     height: 100%;
-    
+    object-fit:cover;
+
   }
 
-  &:after{
+  &:after {
     content: 'bomsai box';
     font-size: 1.6rem;
     font-weight: bold;
     color: #fff;
     letter-spacing: 5px;
     text-align: center;
-    line-height: calc(720px * .43); /*Calculo el alto actual de container--col y le saco el porcentaje de 43%, equivalente a el tamaño del card--solo*/
+    line-height: calc(720px * .43);
+    /*Calculo el alto actual de container--col y le saco el porcentaje de 43%, equivalente a el tamaño del card--solo*/
     display: block;
     width: 100%;
     height: 100%;
@@ -247,7 +257,96 @@ header {
 
 }
 
+/*---------New-Product------------*/
 
+.container--paled {
+  background-color: #f5f5f5;
+}
+
+.product {
+  height: 700px;
+}
+
+.product__title {
+  color: hsl(30, 54%, 55%);
+  text-align: center;
+  line-height: calc(var(--title-font-size) * 4.5);
+
+  span {
+    color: #000;
+  }
+}
+
+.product__carrusel {
+  background-color: #fff;
+  width: 90%;
+  height: calc(90% - (var(--title-font-size) * 4.5));
+  margin-inline: auto;
+}
+
+/*---------Video------------*/
+
+.container--video {
+  height: 100%;
+
+  .container__content{
+    background-color: rgba(3, 48, 4, 0.5)
+  }
+
+  .container__side {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .container__button {
+    padding: 50px;
+  }
+
+  .container__title {
+    font-size: var(--title-font-size);
+    font-family: 'arial';
+    font-weight: 100;
+  }
+
+  .btn--play{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-inline: auto;
+    font-size: 4rem;
+    font-family: initial;
+    padding: 0 0 0 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+
+/*col-xl- | card__article*/
+.container--col-xl {
+  display: flex;
+}
+
+.col-xl {
+  width: 50%;
+  height: 500px;
+}
+
+.card__title--video {
+  span {
+    color: hsl(30, 54%, 55%);
+  }
+}
+
+.card__text--video {
+  width: 40%;
+  text-align:start;
+  padding: 10px 0;
+}
 
 
 

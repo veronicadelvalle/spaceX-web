@@ -22,7 +22,7 @@ Somos un grupo de chicos entusiastas creando una landing page en equipo. Nuestro
 #### Participantes
 
 1. Verónica Del Valle (profesora)
-2. Nombre 2
+2. JRuben (Pablo.css)
 3. Nombre 3
 4. Nombre 4
 5. Nombre 5
