@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/image/flaticon.png" type="image/x-icon"><!-- Imagen de la ventana del navegador -->
-    <title>SpaceX</title>
-    
-    <!-- Estilos -->
-    <link rel="stylesheet" href="./assets/css/normalize.css"> 
-    <link rel="stylesheet" href="./assets/css/style.css">    
-    
-    <!--font awesome--> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Imagen de la ventana del navegador -->
+  <link rel="shortcut icon" href="./assets/image/flaticon.png" type="image/x-icon">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>SpaceX | Inicio</title>
 </head>
+
 <body>
   <header>
-    <div class="center"><!-- Nueva implementación para centrar los elementos -->
-      <div class="brand">
-        <img src="./assets/image/brand.png" alt="Logo SpaceX">
-      </div>
-  
-      <div class="nav-icons">
-        <nav class="navegation">
-          <a href="#">Inicio</a>
-          <a href="#">Nosotros</a>
-          <a href="#">Caracteristicas</a>
-          <a href="#">Comprar</a>
-          <a href="#">Colecciones</a>
-          <a href="#">Blog</a>
-          <a href="#">Contacto</a>
-        </nav>
-  
-        <div class="icons">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <div class="cart">
-            <span>5</span>
-            <i class="fa-solid fa-cart-shopping"></i>    
-          </div>           
-        </div>
-      </div>
+    <div class="banner">
+      <img class="banner__img" src="./assets/image/brand.png" alt="banner del sitio">
     </div>
+    <nav class="menu">
+      <ul class="menu__list">
+        <!-- menu de la pagina -->
+        <li class="menu__item"><a href="./Index.html" class="menu__item--link">Inicio</a></li>
+        <li class="menu__item"><a href="#" class="menu__item--link">Nosotros</a></li>
+        <li class="menu__item"><a href="#" class="menu__item--link">Características</a></li>
+        <li class="menu__item"><a href="#" class="menu__item--link">Compras</a></li>
+        <li class="menu__item"><a href="#" class="menu__item--link">Colecciones</a></li>
+        <li class="menu__item"><a href="#" class="menu__item--link">Blog</a></li>
+        <li class="menu__item"><a href="#" class="menu__item--link">Contacto</a></li>        
+      </ul>
+      <span class="icon--menu">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        <span><i class="fa-solid fa-cart-shopping"></i></span>
+      </span>
+    </nav>
   </header>
 </body>
+
 </html>
