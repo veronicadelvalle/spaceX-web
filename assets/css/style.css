@@ -272,13 +272,65 @@ header {
     color: #000;
   }
 }
-
+/*carrusel*/
 .product__carrusel {
-  background-color: #fff;
+  margin-inline: auto;
   width: 90%;
   height: calc( (700px * 0.9) - (var(--title-font-size) * 4.5)); /* La primera resta la tengo que hacer en base al alto *minimo* del contenedor padre que es el product, por alguna razon como el tamaño esta en min-height, no toma como referencia este mismo alto (por ende tengo que sacar el porcentaje de manera explicita). el calculo que le sigue es para que me de el 90%  del tamaño restante contemplando el titulo del product.*/
+
+  .splide__arrow {
+    transform: scale(2); 
+    background:none;
+  }
+
+  .splide__arrow svg {
+    fill: rgba(0, 0, 0, 0.4);
+  }
+
+  .splide__pagination__page.is-active{
+    background: var(--color-brown);
+  }
+}
+
+.splide {
+  width: 80%;
+  height: 100%;
   margin-inline: auto;
 }
+
+.splide__track{
+  width: 90%;
+  height: inherit;
+  margin-inline: auto;
+}
+
+.splide__slide{
+  /* border: 2px solid blue; */
+}
+
+.splide__slide__container{
+  height: 100%;
+  padding: 50px 30px;
+
+  .splide__slide__content{
+    height: inherit;
+  }
+
+  .product__img{
+    height: 60%;
+  }
+
+  .product__card{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  
+}
+
+
+
 
 /*---------Video------------*/
 
@@ -515,5 +567,6 @@ header {
   color: rgb(11, 90, 180);
   padding: 10px;
   margin-inline: 5px;
+  text-decoration: none;
 }
 
